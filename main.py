@@ -22,4 +22,4 @@ def read_root():
 def predict(data: DiabetesInput):
     input_data = np.array([[data.Pregnancies, data.Glucose, data.BloodPressure, data.BMI, data.Age]])
     prediction = model.predict(input_data)[0]
-    return {"diabetic": bool(prediction)}
+    return {"diabetic": bool(prediction)} 
